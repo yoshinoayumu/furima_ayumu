@@ -180,8 +180,10 @@
   </div>
   <%# /商品一覧 %>
 </div>
-<%= link_to('#', class: 'purchase-btn') do %>
+<div class='purchase-btn'>
   <span class='purchase-btn-text'>出品する</span>
-  <%= image_tag 'icon_camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
-<% end %>
+  <a href="/items/new">
+    <%= image_tag 'icon_camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+  </a>
+</div>
 <%= render "shared/footer" %>
