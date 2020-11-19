@@ -4,7 +4,7 @@ class ItemsController < ApplicationController
  # 理由：非会員が出品できてしまうため
 
   def index
-
+    @items = Item.all.order(created_at: :desc)
   end
 
   def new
