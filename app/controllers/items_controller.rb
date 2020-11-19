@@ -22,7 +22,10 @@ class ItemsController < ApplicationController
     # アクションのnewをコールすると、エラーメッセージが入った@itemが上書きされてしまうので注意
     render 'new'
   end
-
+  
+  def show
+    @item = Item.find(params[:id])
+  end
 
 
   private
