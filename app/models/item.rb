@@ -24,7 +24,7 @@ class Item < ApplicationRecord
     validates :scheduled_delivery_id
   end
 
-  #　<<アクティブハッシュの設定関連>>
+  # <<アクティブハッシュの設定関連>>
   belongs_to_active_hash :category
   belongs_to_active_hash :sales_status
   belongs_to_active_hash :shipping_fee_status

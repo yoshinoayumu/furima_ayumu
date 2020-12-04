@@ -4,6 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
   if (path === "/items/new" || path === "/items" || pathRegex.test(path)) {
     //    出品ページの場合　||　出品ページの検証にかかった場合 || 商品編集の場合
     const priceInput = document.getElementById("item_price");
+    console.log(priceInput)
     const addTaxDom = document.getElementById("add-tax-price");
     const profitDom = document.getElementById("profit");
 

@@ -16,7 +16,7 @@ RSpec.describe User, type: :model do
         @user.valid?
         expect(@user.errors.full_messages).to include("Nickname can't be blank")
       end
-      it 'password:必須' do
+      it 'password:必須' do 
         @user.password = ''
         @user.valid?
         expect(@user.errors.full_messages).to include("Password can't be blank")
@@ -86,7 +86,7 @@ RSpec.describe User, type: :model do
         @user.first_name_kana = ''
         @user.valid?
         expect(@user.errors.full_messages).to include("First name kana can't be blank")
-      end
+      end  
       it 'first_name_kana:全角（カタカナ）' do
         @user.first_name_kana = 'てすと'
         @user.valid?

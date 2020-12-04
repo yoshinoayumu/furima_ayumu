@@ -29,8 +29,12 @@ class ItemsController < ApplicationController
   end
 
   def update
+
+    # if @item.update(item_params)
+    #   redirect_to
+
     @item.update(item_params) if current_user.id == @item.user.id
-    return redirect_to item_path if @item.valid?
+    return redirect_to item_path 
     render 'edit'
   end
 
